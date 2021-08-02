@@ -6,7 +6,9 @@ const LoginButton = () => {
     const { signIn } = useGoogleAuth();
 
     return (
-        <button onClick={signIn}>Login</button>
+        
+        <button><img src="https://developers.google.com/identity/images/btn_google_signin_light_normal_web.png" alt="my image" onClick={signIn} /></button>
+
       );
 };
 
