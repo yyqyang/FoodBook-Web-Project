@@ -63,7 +63,7 @@ const Signin = () => {
         </div>
         <div className={classes.paper}>
             <h1>Welcome to FoodBook</h1> 
-            <p>A website help you to calculate calories</p>
+            <p>A website helps you calculate calories</p>
         </div>
 
         <div className={classes.paper}>
