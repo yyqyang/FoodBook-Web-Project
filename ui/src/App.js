@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import MyNavbar from './components/Navbar';
 import FoodTable from './components/FoodTable';
-
+import LogoutButton from './components/LogoutButton';
 
 
 function FormattedDate(props) {
@@ -51,6 +51,7 @@ function App() {
       <MyNavbar />
       <Clock />
       <FoodTable />
+      <LogoutButton/>
     </div>
   );
 }

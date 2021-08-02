@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './Nav';
+import { GoogleAuthProvider } from './components/googleAuth';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <GoogleAuthProvider>
+    <Nav />
+  </GoogleAuthProvider>,
   document.getElementById('root')
 );
 
