@@ -15,9 +15,6 @@ function getContext({ req }) {
 const resolvers = {
   Query: {
     user: user.get,
-    about: about.getMessage
-  },
-  Mutation: {
   },
   GraphQLDate,
 };

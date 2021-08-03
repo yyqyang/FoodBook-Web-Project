@@ -27,17 +27,15 @@ type Ingredient {
 }
 input DietInput {
   title: String!
-  ingr:Ingredient!
+  ingr:String!
 }
 
 input DietUpdate {
   title: String!
-  ingr:Ingredient!
+  ingr:String!
 }
 
 type Query {
-    user: [User!]!,
-}
-
-type Mutation {
+    user: [User!]
+    
 }
