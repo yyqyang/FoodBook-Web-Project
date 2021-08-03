@@ -1,89 +1,37 @@
 ![](ui/public/Loginpage.PNG)
 
-## Attention
-    # Do not use npm xxx, instead use yarn
-    Yarn is newer and will collide with npm.
-    Delete yarn.lock and node_modules before run yarn.
-    https://yarn.bootcss.com/
+# GroupProject-FoodBook
 
-    cheatsheet:
-    yarn = npm install
-    yarn add xxx = npm install xxx
+Website Name: FoodBook
 
-    # Save files in proper folder
-    # bootstrap has to be 4.6.0 to support bootstrap-select
+Objective: An interactive food recipe website where users can document their own recipe with total calories consumption counts. 
 
+Targeted Audience: People who would like to keep track of their custom food recipe and are interested in learning how to cook healthy meals with lower calories and more nutritious ingredients
 
+Main features: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A calorie Calculator which can estimate a user’s calorie & ingredient intake based on user input (e.g. 100g egg + 100g beef = 400Kcal).
 
-## Available Scripts
+User registration function. Registered users can make daily records and unlock community functions.
 
-In the project directory, you can run:
+Post functions: Allow users to post custom recipes in form of text or photos with total calories auto generated.
 
-### `yarn start`
+User comment function: Allow users to  like and  comment on the recipes shared by other users.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Members: 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Yuqing Yang 
 
-### `yarn test`
+Shangjun Jiang 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Shirali Husan 
 
 
-### `DB_URL` 
-The data base is polulated and set up to be connect. the DB_URL:  "mongodb+srv://shirali:Parishta@foodbook.nuxxm.mongodb.net/User?retryWrites=true&w=majority"
+# API 
+our mong db mongo "mongodb+srv://shirali:Parishta@foodbook.nuxxm.mongodb.net/User?retryWrites=true&w=majority" conncection is here.
+DB is established and ready to go.
+The URL for the food calries API: https://developer.edamam.com/food-database-api-docs. 
+ready to be viewed. 
+
+# UI
+Starting with the template from the create react app, we had designed two pages for the UI. One sign in page with rount functions connections and another page with search bar plus table for calculation. Sign on page has been integrated into the main page and fully developed.
