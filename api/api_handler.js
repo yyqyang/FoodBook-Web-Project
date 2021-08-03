@@ -16,6 +16,7 @@ const resolvers = {
   Query: {
     user: user.get,
   },
+
   GraphQLDate,
 };
 
