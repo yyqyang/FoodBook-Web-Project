@@ -81,3 +81,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### `DB_URL` 
+The data base is polulated and set up to be connect. the DB_URL:  "mongodb+srv://shirali:Parishta@foodbook.nuxxm.mongodb.net/User?retryWrites=true&w=majority"
