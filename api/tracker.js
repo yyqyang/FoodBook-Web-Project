@@ -138,7 +138,7 @@ const { getDb, getNextSequence } = require('./db.js');
 
 async function get(_, { id }) {
   const db = getDb();
-  const user = await db.collection('user').findOne({ id });
+  const user = await db.collection('user').findOne({id});
   return user;
 }
 

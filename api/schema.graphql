@@ -36,6 +36,5 @@ input DietUpdate {
 }
 
 type Query {
-    user: [User!]
-    
+    user: User!
 }
