@@ -60,3 +60,7 @@ the main page and fully developed.
 
 ShangJun Jiang and Yuqing Yang worked together on the UI component and developed the sign-in page and implemeted some 
 webpages that will be updated more in the following iteration.
+
+![Ch02](/readme_images/Ch02.png)
+
+The ui was also functional at the end .
