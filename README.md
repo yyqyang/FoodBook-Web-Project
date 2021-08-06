@@ -28,11 +28,35 @@ Shangjun Jiang 
 Shirali Husan 
 
 
+#itor 1:
+
 # API 
 our mong db mongo "mongodb+srv://shirali:Parishta@foodbook.nuxxm.mongodb.net/User?retryWrites=true&w=majority" conncection is here.
 DB is established and ready to go.
 The URL for the food calries API: https://developer.edamam.com/food-database-api-docs. 
 ready to be viewed. 
 
+*member contribution:* 
+
+Yuqing Yang:   debuged the api server where it was not starting due to the incompatible schemaql and 
+the resolvers.
+
+ShangJun Jiang: was able to pin-point the design and how we going forward with our api to the database.
+
+
+Shirali Husan: reformed and resumed the code from the completed mern stack API to test it in the graphql playground to
+test the exiting data from the mongodb. Setting atlas and also connecting to the api and the end result is the api 
+was able to function and looking forward to connecting with the ui. 
+
+![Ch02](/readme_images/Ch02.png)
+
+
+The API was able to start and 
+
 # UI
-Starting with the template from the create react app, we had designed two pages for the UI. One sign in page with rount functions connections and another page with search bar plus table for calculation. Sign on page has been integrated into the main page and fully developed.
+Starting with the template from the create react app, we had designed two pages for the UI. One sign in page with rount 
+functions connections and another page with search bar plus table for calculation. Sign on page has been integrated into
+the main page and fully developed.
+
+ShangJun Jiang and Yuqing Yang worked together on the UI component and developed the sign-in page and implemeted some 
+webpages that will be updated more in the following iteration.
