@@ -4,7 +4,7 @@ import MyNavbar from '../../components/Navbar';
 import FoodTable from '../../components/FoodTable';
 import Searchbar from '../../components/Searchbar';
 import Clock from '../../components/Clock';
-import LogoutButton from '../../components/LogoutButton';
+
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <Clock />
       <Searchbar />
       <FoodTable />
-      <LogoutButton/>
+     
     </div>
   );
 }

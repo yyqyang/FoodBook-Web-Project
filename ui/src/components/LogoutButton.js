@@ -1,11 +1,13 @@
 import React from 'react';
 import { useGoogleAuth } from './googleAuth';
+import Button from 'react-bootstrap/Button';
 
 const LogoutButton = () => {
     const { signOut } = useGoogleAuth();
-
+   
     return (
-        <button onClick={signOut}>Logout</button>
+        <Button variant="dark" onClick={signOut} >Log Out</Button>
+      
       );
 };
 

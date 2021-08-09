@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import LogoutButton from './LogoutButton';
 class MyNavbar extends React.Component {
     render() {
       return (
@@ -23,9 +23,11 @@ class MyNavbar extends React.Component {
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                   </NavDropdown>
+                  
                 </Nav>
               </Navbar.Collapse>
             </Container>
+            <LogoutButton/>
           </Navbar>
         </div>
       )
