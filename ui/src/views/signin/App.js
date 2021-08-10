@@ -15,7 +15,6 @@ function App() {
       <Clock />
       <SearchBar />
       <FoodTable />
-     
     </div>
   );
 }

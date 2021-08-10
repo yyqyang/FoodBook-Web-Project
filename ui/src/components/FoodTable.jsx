@@ -8,7 +8,7 @@ class FoodTable extends React.Component {
           <Table striped bordered hover>
             <thead>
               <tr>
-                <th>#</th>
+                <th>#z</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Username</th>

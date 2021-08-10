@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipes.js";
 
-const App = () => {
+const SearchBar = () => {
   const APP_ID = "51a353f2";
   const APP_KEY = "480a9349965ab2c4dc491fe714b9cea9";
 
@@ -44,7 +44,7 @@ const App = () => {
           onChange={updateSearch}
         />
         <button className="search-button" type="submit">
-          search
+          Add Food
         </button>
       </form>
       <div className="recpiesss">
@@ -61,7 +61,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default SearchBar;
 
 // const [counter, setCounter] = useState(0);
 // <h1 onClick={() => setCounter(counter + 1)}>{counter}</h1>
