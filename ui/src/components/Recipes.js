@@ -12,14 +12,14 @@ const Recipes = ({ title, calories }) => {
             <td>Food</td>
             <td>Quantity</td>
             <td>Kcal</td>
-            <td>operation</td>
+            <td>Operation</td>
             </tr>
         </thead>
             <tbody>
                 <tr>
-                <td>1</td>        
+                <td>#</td>        
                 <td>{title}</td>
-                <td>1</td>
+                <td>{1}</td>
                 <td>{calories}</td>
                 <td>operation</td>
                 </tr>

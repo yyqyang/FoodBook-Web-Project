@@ -7,7 +7,7 @@ const LoginButton = () => {
 
     return (
         
-        <button><img src="https://developers.google.com/identity/images/btn_google_signin_light_normal_web.png" alt="my image" onClick={signIn} /></button>
+        <button><img src="https://developers.google.com/identity/images/btn_google_signin_light_normal_web.png" alt="my login icon" onClick={signIn} /></button>
 
       );
 };

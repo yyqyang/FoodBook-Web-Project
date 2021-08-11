@@ -8,6 +8,7 @@ const SearchBar = () => {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
+  
 
   useEffect(() => {
     getRecipes();
@@ -53,7 +54,6 @@ const SearchBar = () => {
           <Recipe
             title={recipes.food.label}
             calories={recipes.food.nutrients.ENERC_KCAL}
-           
           />
         ))}
       </div>
