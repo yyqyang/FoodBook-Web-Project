@@ -8,20 +8,20 @@ const Recipes = ({ title, calories }) => {
     <Table striped bordered hover>
         <thead>
             <tr>
-            <td>Index</td>          
+                 
             <td>Food</td>
-            <td>Quantity</td>
+          
             <td>Kcal</td>
-            <td>operation</td>
+           
             </tr>
         </thead>
             <tbody>
                 <tr>
-                <td>1</td>        
+                
                 <td>{title}</td>
-                <td>1</td>
+             
                 <td>{calories}</td>
-                <td>operation</td>
+         
                 </tr>
             
             </tbody>

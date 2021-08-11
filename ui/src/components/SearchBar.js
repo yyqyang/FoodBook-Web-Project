@@ -34,6 +34,8 @@ const SearchBar = () => {
     setSearch("");
   };
 
+  
+
   return (
     <div className="App">
       <form onClick={getSearch} className="search-form">
