@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import SearchBar from "./Searchbar";
+import MyTable from "./mytable";
+import Test from "./test";
 
 const Calculator = props => {
 
@@ -7,7 +8,7 @@ const Calculator = props => {
     return (
         <div>
             <h1>Calculator</h1>
-            <SearchBar/>
+            <MyTable />
 
         </div>
     )

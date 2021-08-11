@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Recipe from "./recipes.js";
+import Recipes from "./recipes.js";
+import Table from "react-bootstrap/Table";
+import MyTable from "./mytable.js";
 
 const SearchBar = () => {
   const APP_ID = "51a353f2";
@@ -34,29 +36,40 @@ const SearchBar = () => {
     setSearch("");
   };
 
+  const handleButton = e => {
+    console.log("press button")
+    // add to list
+  }
+
+
+      
   return (
     <div className='App'>
-      <form onClick={getSearch} className='search-form'>
-        <input
-          className='search-bar'
-          type='text'
-          value={search}
-          onChange={updateSearch}
-        />
-        <button className='search-button' type='submit'>
-          Add Food
-        </button>
-      </form>
-      <div className='recpiesss'>
+      <div>
+        <form onClick={getSearch} className='search-form'>
+          <input
+            className='search-bar'
+            type='text'
+            value={search}
+            onChange={updateSearch}
+          />
+          <button className='search-button' type='submit' onClick={handleButton}>
+            Add Food
+          </button>
+        </form>
+      </div>
+      
+      {/* <div className='recpiesss'>
         {" "}
         {recipes &&
           recipes.map((recipes) => (
-            <Recipe
+            <Recipes
               title={recipes.food.label}
               calories={recipes.food.nutrients.ENERC_KCAL}
             />
           ))}
-      </div>
+      </div> */}
+
     </div>
   );
 };
