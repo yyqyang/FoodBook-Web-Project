@@ -28,7 +28,7 @@ Shangjun Jiang 
 Shirali Husan 
 
 
-# itor 1:
+# iter 1:
 
 # API 
 our mong db mongo "mongodb+srv://shirali:Parishta@foodbook.nuxxm.mongodb.net/User?retryWrites=true&w=majority" conncection is here.
