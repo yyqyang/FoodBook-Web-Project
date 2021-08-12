@@ -5,7 +5,7 @@ import FoodTable from '../../components/FoodTable';
 import SearchBar from '../../components/SearchBar';
 import Clock from '../../components/Clock';
 import Reports from '../../components/Reports';
-
+import Appt from '../../components/Appt';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <MyNavbar />
       <Clock />
       <SearchBar />
-      <Reports />
+      <Appt />
     </div>
   );
 }
