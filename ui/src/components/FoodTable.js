@@ -188,9 +188,7 @@ const FoodTable = () => {
                 onRowAdd: (newData) =>
                   new Promise((resolve, reject) => {
                     setTimeout(() => {
-                      const dataUpdate = [...data];
-                      const index = data.tableData.id;
-                      dataUpdate[index] = newData;
+                   
                       setData([...data, newData]);
 
                       resolve();
