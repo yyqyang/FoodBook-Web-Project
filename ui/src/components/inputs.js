@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Grid, TextField } from "@material-ui/core";
-import Recipes from "./Recipes.js";
+import Recipes from "../../history/Recipes.js";
 import Input from '@material-ui/core/Input';
 
 

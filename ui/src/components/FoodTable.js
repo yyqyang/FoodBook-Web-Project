@@ -6,9 +6,10 @@ import tableIcons from "./icons";
 
 import Input from '@material-ui/core/Input';
 
-
-
-const Appt = () => {
+let foodName;
+let foodCal;
+let total;
+const FoodTable = () => {
   const initialValues = {
     Food: "",
     Kcal: "",
@@ -81,9 +82,10 @@ const Appt = () => {
         onSubmit={(values) => {
             console.log(values);
           const newValues = {
-            Food: values.Food || 0,
-            Kcal: values.Kcal,
-            Quantity: values.Quantity
+            Food: foodName,
+            Kcal: foodCal,
+            Quantity: values.Quantity,
+    
           };
 
           new Promise((resolve, reject) => {
@@ -114,12 +116,15 @@ const Appt = () => {
       <div className="recpiesss"></div>
       <div> 
         {recipes && recipes.map((recipes) => {
+            foodName = recipes.food.label;
+            foodCal = recipes.food.nutrients.ENERC_KCAL;
+        
         return (
        
             <Grid container spacing={2}>
 
             <Grid item xs={4}>
-              <Input  
+              <TextField  
                 name="Food"
                 label="Food"
                 variant="outlined"
@@ -127,8 +132,7 @@ const Appt = () => {
                 color="secondary"
                 autoComplete={recipes.food.label}
                 defaultValue={recipes.food.label}
-                disabled inputProps={{ 'aria-label': 'description' }} 
-                key={recipes.food.label}
+              
                 onChange={props.handleChange}
                 onBlur={props.handleChange}
               />
@@ -138,13 +142,13 @@ const Appt = () => {
               <TextField 
                 name="Kcal"
                 label="Kcal"
-              
-                placeHolder={recipes.food.nutrients.ENERC_KCAL}
-                autoComplete={recipes.food.nutrients.ENERC_KCAL}
-                defaultValue={recipes.food.nutrients.ENERC_KCAL}
-                variant="filled"
+                variant="outlined"
                 margin="dense"
                 color="secondary"
+                
+                autoComplete={recipes.food.nutrients.ENERC_KCAL}
+                defaultValue={recipes.food.nutrients.ENERC_KCAL}
+
                 onChange={props.handleChange}
                 onBlur={props.handleBlur}
                 
@@ -157,21 +161,22 @@ const Appt = () => {
                 variant="outlined"
                 margin="dense"
                 color="secondary"
-                //onChange={props.form.handleChange}
-                //onBlur={props.form.handleBlur}
+                onChange={props.handleChange}
+                onBlur={props.handleBlur}
               />
             </Grid>
-            <Grid><br /></Grid>
+            <br />
             <Grid container item xs={12} justify="flex-start">
               <button type="submit" onClick={() => props.handleSubmit()}>
                 Submit
               </button>
             </Grid>
+            <hr />
           </Grid>  
         );
       })}
       </div>
-  
+    
     </div>
   
             <MaterialTable
@@ -183,6 +188,9 @@ const Appt = () => {
                 onRowAdd: (newData) =>
                   new Promise((resolve, reject) => {
                     setTimeout(() => {
+                      const dataUpdate = [...data];
+                      const index = data.tableData.id;
+                      dataUpdate[index] = newData;
                       setData([...data, newData]);
 
                       resolve();
@@ -193,6 +201,7 @@ const Appt = () => {
                     setTimeout(() => {
                       const dataUpdate = [...data];
                       const index = oldData.tableData.id;
+                      console.log(index);
                       dataUpdate[index] = newData;
                       setData([...dataUpdate]);
 
@@ -212,11 +221,15 @@ const Appt = () => {
                   })
               }}
             />
-            
+         
+
+
           </Form>
         )}
       </Formik>
     </div>
   );
 };
-export default Appt;
+export default FoodTable;
+
+//<pre>{JSON.stringify(data, null, 2)}</pre>
