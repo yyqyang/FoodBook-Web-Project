@@ -8,5 +8,3 @@ function setMessage(_, { message }) {
 function getMessage() {
   return aboutMessage;
 }
-
-// module.exports = { getMessage, setMessage: mustBeSignedIn(setMessage) };
