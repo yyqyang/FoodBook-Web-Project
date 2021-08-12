@@ -1,40 +1,24 @@
 scalar GraphQLDate
 
-enum Unit {
-  Grams
-  Pounds
-  Milligrams
-}
-
 type User {
   _id: ID!
-  name:String!
-  age: Int!
-  gender:String!
-  lifestyle:String!
-  email:String!
-  title:String!
-  dietList:[Ingredient!]
-  deletedDiet:[Ingredient!]
+  name: String!
+  email: String!
 }
 
-type Ingredient {
-  id:Int!
-  title:String!
-  weightNum:Int!
-  unit:Unit!
-  source:String!
-}
-input DietInput {
-  title: String!
-  ingr:String!
+
+" For inserting a new User into the database"
+input UserInput {
+  name: String!
+  email: String!
 }
 
-input DietUpdate {
-  title: String!
-  ingr:String!
-}
-
+##### Top level declarations
 type Query {
-    user: User!
+  users: [User!]
+  user(email: String!): User
+}
+
+type Mutation {
+  insertUser(user: UserInput!): User!
 }
