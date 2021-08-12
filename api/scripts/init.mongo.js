@@ -19,50 +19,24 @@ const foodDB = [
   {
     id: 1,
     name: 'Shirali',
-    age: 25,
-    gender:'Male',
     email:'husan.s@northeastern.edu',
-    title: 'my diet',
-    dietList:'100g beef.'
-                +'\n 300g eggs'
-                +'\n 100g sugar'
-                +'\n 250g fish' 
   },
   {
     id: 2,
     name: 'Shangjun',
-    age: 23,
-    gender:'Male',
     email:'1234@qq.com',
-    title: 'ShangJun diet',
-    dietList:'100g beef.'
-                +'\n 30g eggs'
-                +'\n 10g sugar'
-                +'\n 25g fish' 
   },
   {
     id: 3,
     name: 'Yang',
-    age: 24,
-    gender:'Female',
     email:'1222@qq.com',
-    title: 'ShangJun diet',
-    dietList:'100g beef.'
-                +'\n 30g eggs'
-                +'\n 10g sugar'
   },
 ];
 
 db.user.insertMany(foodDB);
-const count = db.user.count();
-print('Inserted', count, 'issues');
-
-db.user.remove({ _id: 'user' });
-db.counters.insert({ _id: 'users', current: count });
 
 db.user.createIndex({ id: 1 }, { unique: true });
 db.user.createIndex({ status: 1 });
-db.user.createIndex({ owner: 1 });
 db.user.createIndex({ created: 1 });
 db.user.createIndex({ title: 'text', description: 'text' });
 
