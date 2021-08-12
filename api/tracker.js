@@ -14,6 +14,13 @@ async function getUsers(_, { }) {
   return users;
 }
 
+async function getData(_, email){
+  const db = getDb();
+  const user = await db.collection("users").find(email);
+  const data = user.tableData;
+  return data
+}
+
 async function insertUser(_, args) {
   const db = getDb();
   const userExists = await db.collection("users").findOne(args.user);
@@ -36,4 +43,5 @@ module.exports = {
   findUser,
   getUsers,
   insertUser,
+  getData,
 };

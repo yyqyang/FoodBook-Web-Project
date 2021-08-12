@@ -4,6 +4,13 @@ type User {
   _id: ID!
   name: String!
   email: String!
+  tableData:[Data!]
+}
+
+type Data {
+  food:String!
+  kcal:Int!
+  quantity:Int!
 }
 
 
