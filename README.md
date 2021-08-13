@@ -93,4 +93,4 @@ In this iteration, we focused mainly on the main fucntionality of the app. The k
 
 We deployed partal function on the heroku site since we had the change the framework of the app. Temporarily we removed the sign in page and will add it back for the next iteration.
 
-![](ui/public/manpage.PNG)
+![](ui/public/mainpage.PNG)
