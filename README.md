@@ -89,8 +89,9 @@ In this iteration, we focused mainly on the main fucntionality of the app. The k
 
 * Visual designing. The styling of the main page has been finalized. We designed a navigation bar, search bar and a table using material ui styling. Also we moved the logout button on the right top corner for users to navigete more easily.
 
+![](ui/public/mainpage.PNG)
+
 # Depoly
 
 We deployed partal function on the heroku site since we had the change the framework of the app. Temporarily we removed the sign in page and will add it back for the next iteration.
 
-![](ui/public/mainpage.PNG)
