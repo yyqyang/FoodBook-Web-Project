@@ -14,18 +14,25 @@ type Data {
 }
 
 
-" For inserting a new User into the database"
-input UserInput {
+" adding new user to the database"
+input newUser{
   name: String!
-  email: String!
+  email:String!
 }
+
+" This will be updated later testing adding user first"
+# input dataInput {
+#   name: String!
+#   email: String!
+# }
 
 ##### Top level declarations
 type Query {
   users: [User!]
   user(email: String!): User
+  userData(email:String!): [Data!]
 }
 
 type Mutation {
-  insertUser(user: UserInput!): User!
+  insertUser(user: newUser!): User!
 }

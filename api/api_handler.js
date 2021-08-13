@@ -9,7 +9,7 @@ const resolvers = {
   Query: {
     user: users.findUser,
     users: users.getUsers,
-    users: users.getData,
+    users: users.getData, 
   },
   Mutation: {
     insertUser: users.insertUser,
