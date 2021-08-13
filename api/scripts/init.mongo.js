@@ -20,16 +20,31 @@ const foodDB = [
     id: 1,
     name: 'Shirali',
     email:'husan.s@northeastern.edu',
+    tableData:{
+      food:"banana",
+      kcal: 60,
+      quantity: 1
+    }
   },
   {
     id: 2,
     name: 'Shangjun',
     email:'1234@qq.com',
+    tableData:{
+      food:"apple",
+      kcal: 80,
+      quantity: 2
+    }
   },
   {
     id: 3,
     name: 'Yang',
     email:'1222@qq.com',
+    tableData:{
+      food:"ham",
+      kcal: 100,
+      quantity: 2
+    }
   },
 ];
 
