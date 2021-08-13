@@ -1,12 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from './Nav';
+import { GoogleAuthProvider } from './components/googleAuth';
+
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+  <GoogleAuthProvider>
+    <Nav />
+  </GoogleAuthProvider>,
+  document.getElementById('root')
 );
-
