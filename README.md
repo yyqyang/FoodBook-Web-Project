@@ -95,6 +95,7 @@ Team has two API right one one from the atlas DB to save user data to make chang
 *Demo: AS YOU CANN SEE THE BEEF KCAL IS AUTOMATICLLY BEING CALCULATED * 
 ![Ch04](/readme_images/Ch04.png)
 ![Ch05](/readme_images/Ch05.png)
+![Ch07](/readme_images/Ch07.png)
 
 
 
@@ -112,7 +113,6 @@ In this iteration, we focused mainly on the main fucntionality of the app. The k
 
 ![](ui/public/mainpage.PNG)
 ![Ch06](/readme_images/Ch06.png)
-![Ch07](/readme_images/Ch07.png)
 
 
 
