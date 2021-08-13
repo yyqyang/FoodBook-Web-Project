@@ -73,9 +73,30 @@ ShangJun Jiang and Shirali Husan was working on the CURD function of api, deploy
 Yuqing Yang and ShangJun Jiang was working on the UI main page, including all the functionalities behind such as routers, design, calculations etc.
 
 
+
 # API 
 
-We had designed the CURD function via DAO with basic table structure. The data will persist after user input.
+We had designed the CRUD function via DAO with basic table structure. The data will persist after user input. and had revamped the API to better suit the data that were coming from the UI.
+
+* The API has gone through a revamp based on the UI data structure. 
+
+* The schema was tailored based on user name email and id. There was also added a subfield as a data table for the food kcal and the quantity. 
+
+* The book API bit difficult to work with therefore, we researched and deployed a newer API which now has connected to the current application.
+
+* Tested API in the local environment and make sure it is working as expected.
+
+
+* IMPORTANT_NOTE * :
+
+Team has two API right one one from the atlas DB to save user data to make changes. Another is fetched from the  open source API that gives us acurate kcal count based on the food that were passed in. 
+
+
+*Demo: AS YOU CANN SEE THE BEEF KCAL IS AUTOMATICLLY BEING CALCULATED * 
+![Ch04](/readme_images/Ch04.png)
+![Ch05](/readme_images/Ch05.png)
+
+
 
 # UI
 
@@ -90,6 +111,14 @@ In this iteration, we focused mainly on the main fucntionality of the app. The k
 * Visual designing. The styling of the main page has been finalized. We designed a navigation bar, search bar and a table using material ui styling. Also we moved the logout button on the right top corner for users to navigete more easily.
 
 ![](ui/public/mainpage.PNG)
+![Ch06](/readme_images/Ch06.png)
+![Ch07](/readme_images/Ch07.png)
+
+
+
+Shirali Husan ShangJun Jian : Revamped the API and working with each other to depoy newly innovated API and data strcuter.  Intagreting two API one that ones gives the correct kcal data based on food input and anther api saves user dat to save it on the table.
+
+Yang Yuqing: UI has also been reworked by our team member to compate with API reworked authentification and adding search cabablity. 
 
 # Depoly
 

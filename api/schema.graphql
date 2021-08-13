@@ -4,7 +4,7 @@ type User {
   _id: ID!
   name: String!
   email: String!
-  tableData:[Data!]
+  tableData: [Data!]
 }
 
 type Data {
