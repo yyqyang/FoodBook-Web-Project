@@ -64,3 +64,33 @@ webpages that will be updated more in the following iteration.
 ![Ch03](/readme_images/Ch03.png)
 
 The ui was also functional at the end .
+
+# itor 2:
+
+For this iteration, all the members has participated the work and collaborated if needed for all the functionalities. The work can be only roughly divided into two parts: UI and API.
+
+ShangJun Jiang and Shirali Husan was working on the CURD function of api, deployment of Heroku
+Yuqing Yang and ShangJun Jiang was working on the UI main page, including all the functionalities behind such as routers, design, calculations etc.
+
+
+# API 
+
+We had designed the CURD function via DAO with basic table structure. The data will persist after user input.
+
+# UI
+
+In this iteration, we focused mainly on the main fucntionality of the app. The key achievements are:
+
+* Successfully connected to the external api data source to a search bar, the user will be able to search the ingredients they would like to add and the get the detailed calories of the specific food.
+
+* Functionality of the main table, after the search, the user will be able to add the information retrived from the api to a main table. The table has been designed in a flexsible way, the user can have custome inputs and put the quantitly they would like to input. 
+
+* Calculation function. The user can get the view of the total calories of their input.
+
+* Visual designing. The styling of the main page has been finalized. We designed a navigation bar, search bar and a table using material ui styling. Also we moved the logout button on the right top corner for users to navigete more easily.
+
+# Depoly
+
+We deployed partal function on the heroku site since we had the change the framework of the app. Temporarily we removed the sign in page and will add it back for the next iteration.
+
+![](ui/public/manpage.PNG)
