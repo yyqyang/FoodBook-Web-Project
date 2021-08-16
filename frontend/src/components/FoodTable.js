@@ -3,12 +3,15 @@ import { Formik, Form } from "formik";
 import { Grid, TextField } from "@material-ui/core";
 import MaterialTable from "material-table";
 import tableIcons from "./icons";
-
+import { useGoogleAuth } from './googleAuth';
 import Input from "@material-ui/core/Input";
 
 let foodName;
 let foodCal;
 let total;
+
+
+
 
 const FoodTable = () => {
   const initialValues = {
@@ -77,7 +80,7 @@ const FoodTable = () => {
     setQuery(search);
     setSearch("");
   };
-
+  const { googleUser } = useGoogleAuth();
   return (
     <div>
       <Formik
@@ -221,9 +224,19 @@ const FoodTable = () => {
           </Form>
         )}
       </Formik>
+      <p>Welcome user {googleUser.getBasicProfile().getId()}</p>
     </div>
   );
 };
 export default FoodTable;
 
 //<pre>{JSON.stringify(data, null, 2)}</pre>
+
+
+//   console.log('ID: ' + googleUser.getBasicProfile().getId());
+//   console.log('Full Name: ' + googleUser.getBasicProfile().getName());
+//   console.log('Given Name: ' + googleUser.getBasicProfile().getGivenName());
+//   console.log('Family Name: ' + googleUser.getBasicProfile().getFamilyName());
+//   console.log('Image URL: ' + googleUser.getBasicProfile().getImageUrl());
+//   console.log('Email: ' + googleUser.getBasicProfile().getEmail());
+
