@@ -1,14 +1,14 @@
 import app from "./server.js";
 import mongodb from "mongodb";
 import dotenv from "dotenv";
-import FoodDAO from "./dao/foodDAO.js";
+import UserDAO from "./dao/userDAO.js";
 
 dotenv.config();
 const MongoClient = mongodb.MongoClient;
 
 const port = process.env.PORT || 8000;
 
-MongoClient.connect(process.env.FOOD_DB_URI, {
+MongoClient.connect(process.env.USER_DB_URI, {
   poolSize: 50,
   wtimeout: 2500,
   useNewUrlParse: true,
@@ -18,7 +18,7 @@ MongoClient.connect(process.env.FOOD_DB_URI, {
     process.exit(1);
   })
   .then(async (client) => {
-    await FoodDAO.injectDB(client);
+    await UserDAO.injectDB(client);
     app.listen(port, () => {
       console.log(`listening on port ${port}`);
     });

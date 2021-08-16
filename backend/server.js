@@ -1,13 +1,13 @@
 import express from "express"
 import cors from "cors"
-import food from "./api/food.route.js"
+import user from "./api/user.route.js"
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
 
-app.use("/api/v2/food", food)
+app.use("/api/v2/users", user)
 app.use("*", (req, res) => res.status(404).json({ error: "not found"}))
 
 export default app

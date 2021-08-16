@@ -225,5 +225,3 @@ const FoodTable = () => {
   );
 };
 export default FoodTable;
-
-//<pre>{JSON.stringify(data, null, 2)}</pre>
