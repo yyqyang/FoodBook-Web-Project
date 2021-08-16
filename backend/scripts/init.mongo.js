@@ -10,35 +10,18 @@ const issuesDB = [
       "user_nmae": "Sam",
       "user_id": "1000",
       "user_psw": "jsjsam",
-      "records": [
-        {
-          "foodlist": ["food1", "food2", "food3"],
-          "food_total_calorie": 1000,
-          "date": "2021-08-10"
-        },
-        {
-          "foodlist": ["food4", "food5", "food6"],
-          "food_total_calorie": 2000,
-          "date": "2021-08-11"
-        }
-      ]
+      "foodlist": ["food1", "food2", "food3"],
+      "total_calorie": 1000,
+      "date": "2021-08-10"
     },
+
     {
       "user_nmae": "Yang",
       "user_id": "1001",
       "user_psw": "jsjsam",
-      "records": [
-        {
-          "foodlist": ["food1", "food2", "food3"],
-          "food_total_calorie": 1000,
-          "date": "2021-08-10"
-        },
-        {
-          "foodlist": ["food4", "food5", "food6"],
-          "food_total_calorie": 2000,
-          "date": "2021-08-11"
-        }
-      ]
+      "foodlist": ["food3", "food4", "food5"],
+      "total_calorie": 2000,
+      "date": "2021-08-11"
     }
   ];
 

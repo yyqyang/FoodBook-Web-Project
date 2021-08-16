@@ -1,3 +1,4 @@
+import { text } from "body-parser"
 import mongodb from "mongodb"
 const ObjectId = mongodb.ObjectID
 
@@ -68,6 +69,19 @@ export default class UserDAO{
       } catch(e){
         console.error(`Unable to delete user: ${e}`)
         return { error: e }
+      }
+    }
+
+    static async updateUser(){
+      try {
+        const updateResponse = await users.updateOne(
+          { user_id: userId },
+          { $set: {foodlist: foodlist, total_calorie: total_calorie, date: date}},
+        )
+        return updateResponse
+      } catch(e){
+        console.error(`Unable to update review: ${e}`)
+        return { error:e }
       }
     }
 }
