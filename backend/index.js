@@ -11,8 +11,8 @@ const port = process.env.PORT || 8000;
 MongoClient.connect(process.env.USER_DB_URI, {
   poolSize: 50,
   wtimeout: 2500,
-  useNewUrlParse: true,
-})
+  useUnifiedTopology: true}
+  )
   .catch((err) => {
     console.error(err.stack);
     process.exit(1);

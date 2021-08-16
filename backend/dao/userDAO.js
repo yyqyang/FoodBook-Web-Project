@@ -10,7 +10,7 @@ export default class UserDAO{
           return
         }
         try {
-          users = await conn.db(process.env.USER_NS).collection("users")
+          users = await conn.db(process.env.USER_NS).collection("foodbook_user")
         } catch (e) {
           console.error(
             `Unable to establish a collection handle in UserDAO: ${e}`,
@@ -72,7 +72,7 @@ export default class UserDAO{
       }
     }
 
-    static async updateUser(){
+    static async updateUser(userId, foodlist, total_calorie, date){
       try {
         const updateResponse = await users.updateOne(
           { user_id: userId },

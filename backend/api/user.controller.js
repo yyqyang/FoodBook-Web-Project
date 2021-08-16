@@ -1,5 +1,4 @@
 import UserDAO from "../dao/userDAO.js"
-import userDAO from "../dao/userDAO.js"
 
 export default class userController {
   static async apiGetUser(req, res, next) {
@@ -11,7 +10,7 @@ export default class userController {
       filters.user_id = req.query.user_id
     }
 
-    const { userList, totalNumUser } = await userDAO.getUser({
+    const { userList, totalNumUser } = await UserDAO.getUser({
       filters,
     })
 
@@ -55,7 +54,7 @@ export default class userController {
 
       if (userResponse.modifiedCount === 0) {
         throw new Error(
-          "unable to update review - user may not be original poster",
+          "unable to update user - user may not be original poster",
         )
       }
       res.json({ status: "success" })

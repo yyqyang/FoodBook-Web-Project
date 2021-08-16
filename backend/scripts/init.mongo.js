@@ -7,7 +7,7 @@ db.foodbook_user.remove({});
 
 const issuesDB = [
     {
-      "user_nmae": "Sam",
+      "user_name": "Sam",
       "user_id": "1000",
       "user_psw": "jsjsam",
       "foodlist": ["food1", "food2", "food3"],
@@ -16,7 +16,7 @@ const issuesDB = [
     },
 
     {
-      "user_nmae": "Yang",
+      "user_name": "Yang",
       "user_id": "1001",
       "user_psw": "jsjsam",
       "foodlist": ["food3", "food4", "food5"],
