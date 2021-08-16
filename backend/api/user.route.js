@@ -8,6 +8,6 @@ router
   .route("/")
   .get(userCtrl.apiGetUser)
   .delete(userCtrl.apiDeleteUser)
-  .update(userCtrl.apiUpdateUser);
+  .put(userCtrl.apiUpdateUser)
 
 export default router;
