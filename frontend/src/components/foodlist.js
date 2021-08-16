@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import FoodDataService from "../services/food";
 import { Link } from "react-router-dom";
-
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import LogoutButton from './LogoutButton';
 const FoodList = (props) => {
   const [food, setFood] = useState([]);
   const [searchName, setSearchName] = useState("");
@@ -47,6 +50,21 @@ const FoodList = (props) => {
 
   return (
     <div>
+       <div>
+          <Navbar bg="dark" expand="lg" variant="dark">
+            <Container>
+              <Navbar.Brand href="#home">FoodBook</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  
+                <Nav.Link href="./FoodBook#home">Home</Nav.Link>
+                  
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+            <LogoutButton/>
+          </Navbar>
       <div className='row pb-1'>
         <div className='input-group col-lg-4'>
           <input
@@ -85,6 +103,7 @@ const FoodList = (props) => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };
