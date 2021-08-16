@@ -60,6 +60,17 @@ export default class UserDAO{
           }
     }
 
+    static async addUser(userId) {
+      try {
+        const newUser = { user_id:userId }
+  
+        return await users.insertOne(newUser)
+      } catch (e) {
+        console.error(`Unable to add user: ${e}`)
+        return { error: e }
+      }
+    }
+
     static async deleteUser(userId){
       try{
         const deleteResponse = await users.deleteOne({
