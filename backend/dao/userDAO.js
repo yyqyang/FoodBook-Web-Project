@@ -83,15 +83,15 @@ export default class UserDAO{
       }
     }
 
-    static async updateUser(userId, foodlist, total_calorie, date){
+    static async updateUser(userId, newfoodlist, newtotal_calorie, newdate){
       try {
         const updateResponse = await users.updateOne(
           { user_id: userId },
-          { $set: {foodlist: foodlist, total_calorie: total_calorie, date: date}},
+          { $set: {foodlist: newfoodlist, total_calorie: newtotal_calorie, date: newdate}},
         )
         return updateResponse
       } catch(e){
-        console.error(`Unable to update review: ${e}`)
+        console.error(`Unable to update user: ${e}`)
         return { error:e }
       }
     }
