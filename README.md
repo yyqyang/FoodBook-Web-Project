@@ -124,3 +124,50 @@ Yang Yuqing: UI has also been reworked by our team member to compate with API re
 
 We deployed partal function on the heroku site since we had the change the framework of the app. Temporarily we removed the sign in page and will add it back for the next iteration.
 
+
+# Itor3 (FINAL VERSION)
+
+This version is the most updated and functional project that is currently delopyed at Heoku.
+
+The API URI:https://cs5610-foodbook-api.herokuapp.com/api/v2/foodbook
+
+The UI URL: https://cs5610-foodbook-ui.herokuapp.com
+
+*Note: that there are multipul branches and commits due to api and ui being not compatable, <span style="background-color: #FFFF00">there were are strctural redesign and the final branch and local commits were lost during migration to the final repo branch</span>  * 
+
+# API 
+
+1.API have under gone significant redisign without using the book's design of schemaql. There are four method that API could deliver data trasnfer between the db and the ui. It includes getRecord, addrecord, updaterecord, and finally deleterecord. 
+2.The data strcture is simple and it includes userId and thier data. The db also sotres their name and it is paerallal with their userID. This type of API is much easier to connect with the frontend and saved us time, and bugs. 
+
+work distro: 
+JiangJianJun worked on methods includes getRocord addRecord , updateRecord which is usefult to add user information on when there are food passed in and being saved. 
+
+Shirali worked ont the userDAO which get uses the db to get the user and delete a user and also add the user later in the UI page.
+
+
+
+
+# UI 
+1. Updated and improved the sign-in process. Instead of using the Google sign-in method, a simple record added form (sign-in tab) was used for data creation. It has simplified the user interaction process.
+
+2. User page developed. Users will be able to check and delete records on the user page
+
+3. Record page will display the food records information and date for the specific records. On the top of the records, the numbers of the records are displayed.
+
+4. Change the FoodList page to the "calculation" page and added a few new features. A reminder for sign-in status at the bottom of the table and a save button to save the user records. If the user has logged in, the saved information will be displayed on the record page
+
+6. Exploration: there are new explorations for the google sign-in page and new visualization design. In the end, we decided to discard those changes to fit in the final product. The contribution is displayed in the "fullui" branches.
+
+Work distro:
+Yang developed the foodtable which stores stores user information and save it under their userID and name under the Usertab.
+
+Shirali: Worked on UI render which is only rendered once when saved under Userid. With help of Vinay it was resloved and now it render correctly when try to view recoreds.
+
+Jiang JianJun: worked on the connection bettwen the UI and AI and fetching the data correctly from the API to the UI which has  the challenges to do . 
+
+
+
+
+
+
