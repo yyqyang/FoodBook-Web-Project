@@ -147,7 +147,7 @@ Shirali worked ont the userDAO which get uses the db to get the user and delete 
 
 The below pictures shows the API is up and runding on heroku with db records at the top level.
 
-![Ch08](/readme_images/Ch08.png)
+![Ch08](/readme_images/Ch08.PNG)
 
 # UI 
 1. Updated and improved the sign-in process. Instead of using the Google sign-in method, a simple record added form (sign-in tab) was used for data creation. It has simplified the user interaction process.
@@ -167,15 +167,15 @@ Shirali: Worked on UI render which is only rendered once when saved under Userid
 
 Jiang JianJun: worked on the connection bettwen the UI and AI and fetching the data correctly from the API to the UI which has  the challenges to do . 
 
-![Ch09](/readme_images/Ch09.png)
+![Ch09](/readme_images/Ch09.PNG)
 
-![Ch10](/readme_images/Ch10.png)
+![Ch10](/readme_images/Ch10.PNG)
 
-![Ch12](/readme_images/Ch12.png)
+![Ch12](/readme_images/Ch12.PNG)
 
-![Ch11](/readme_images/Ch11.png)
+![Ch11](/readme_images/Ch11.PNG)
 
-![Ch13](/readme_images/Ch13.png)
+![Ch13](/readme_images/Ch13.PNG)
 
 
 
